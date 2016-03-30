@@ -1,0 +1,54 @@
+[ 2016-03-21T12:12:55+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-21T12:12:55+08:00 ] ::1 /newsVis/Application/Home/Common/img/editAdd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-21T12:12:55+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-21T12:24:07+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-21T12:24:07+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-21T12:24:07+08:00 ] ::1 /newsVis/Application/Home/Common/img/editAdd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-21T12:30:31+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-21T12:30:31+08:00 ] ::1 /newsVis/Application/Home/Common/img/editAdd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-21T12:30:31+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+ERR: 无法加载模块:Application
+

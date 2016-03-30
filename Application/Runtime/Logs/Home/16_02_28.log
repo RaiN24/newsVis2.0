@@ -1,0 +1,56 @@
+[ 2016-02-28T19:22:10+08:00 ] ::1 /newsVis/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002498s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\_XAMPP\htdocs\newsVis\Application\Home\Controller\IndexController.class.php 第 6 行.
+NOTIC: [2] file_get_contents(http://tl-generator.herokuapp.com/scrape): failed to open stream: HTTP request failed! HTTP/1.1 503 Service Unavailable
+ E:\_XAMPP\htdocs\newsVis\Application\Home\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.038207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.038350s ]
+
+[ 2016-02-28T19:22:45+08:00 ] ::1 /newsVis/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\_XAMPP\htdocs\newsVis\Application\Home\Controller\IndexController.class.php 第 6 行.
+NOTIC: [2] file_get_contents(http://tl-generator.herokuapp.com/scrape): failed to open stream: HTTP request failed! HTTP/1.1 503 Service Unavailable
+ E:\_XAMPP\htdocs\newsVis\Application\Home\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002188s ]
+
+[ 2016-02-28T19:22:46+08:00 ] ::1 /newsVis/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\_XAMPP\htdocs\newsVis\Application\Home\Controller\IndexController.class.php 第 6 行.
+NOTIC: [2] file_get_contents(http://tl-generator.herokuapp.com/scrape): failed to open stream: HTTP request failed! HTTP/1.1 503 Service Unavailable
+ E:\_XAMPP\htdocs\newsVis\Application\Home\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001496s ]
+
+[ 2016-02-28T19:23:48+08:00 ] ::1 /newsVis/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\_XAMPP\htdocs\newsVis\Application\Home\Controller\IndexController.class.php 第 6 行.
+NOTIC: [2] file_get_contents(http://tl-generator.herokuapp.com/scrape): failed to open stream: HTTP request failed! HTTP/1.1 503 Service Unavailable
+ E:\_XAMPP\htdocs\newsVis\Application\Home\Controller\IndexController.class.php 第 16 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001508s ]
+

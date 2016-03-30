@@ -26,8 +26,8 @@ class IndexController extends Controller {
     	echo json_encode($result);
     }
 
-    public function test()
+    public function help()
     {		
-    	echo time();
+    	$this->display();
     }
 }

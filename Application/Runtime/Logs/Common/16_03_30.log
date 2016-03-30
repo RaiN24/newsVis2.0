@@ -1098,3 +1098,369 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
 ERR: 无法加载模块:Application
 
+[ 2016-03-30T18:45:11+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T18:45:11+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:16:44+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:16:44+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:16:46+08:00 ] ::1 /newsVis/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+ERR: 无法加载模块:Test
+
+[ 2016-03-30T19:39:36+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:39:43+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:41:01+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:41:25+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:42:02+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:42:10+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:42:40+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:53:32+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:53:32+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:55:24+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:55:24+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:56:09+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:56:09+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:58:13+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+ERR: 无法加载模块:Application
+
+
+
+[ 2016-03-30T19:58:28+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:59:12+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:59:13+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:59:13+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:59:23+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:59:24+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T19:59:24+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:00:05+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:00:05+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:01:07+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:01:07+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:01:23+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:01:23+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:01:41+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:01:41+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:02:37+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:02:56+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:02:56+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:03:31+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:03:31+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:03:37+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+ERR: 无法加载模块:Application
+
+
+
+[ 2016-03-30T20:06:04+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+ERR: 无法加载模块:Application
+
+
+
+[ 2016-03-30T20:06:32+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:06:32+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:06:58+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:06:58+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:07:45+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:07:45+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:07:53+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:07:53+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:09:12+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:09:12+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:09:20+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:09:20+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:09:34+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:09:34+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:09:53+08:00 ] ::1 /newsVis/Application/Home/Common/img/deleteAll.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:09:53+08:00 ] ::1 /newsVis/Application/Home/Common/img/merge.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:13:03+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:13:44+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载模块:Application
+
+[ 2016-03-30T20:14:02+08:00 ] ::1 /newsVis/Application/Home/Common/css/style.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+ERR: 无法加载模块:Application
+

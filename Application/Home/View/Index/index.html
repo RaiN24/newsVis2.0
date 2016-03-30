@@ -26,10 +26,27 @@
 
 
 <body ng-controller="MainCtrl" >
+    
+<div id='helpBox'>
+    <h1>Steps:</h1>
+    <p>1.拷贝你的新闻内容至Document View内，并提交 
+    <p>2.点击Control Panel中的加号按钮，提供一个初始为空的事件供你写入
+    <p>3.根据Document View内的新闻，逐一向Control Panel的空事件写入事件，并提交
+    <p>4.点击Control Panel中的向下按钮，下次此次你写入的所有事件文件，以备下次使用
+    <p>5.若需重新加载新的新闻，点击Control Panel中的文本按钮
+    <p>6.若需载入已经下载的事件文件，点击Control Panel中的向上按钮
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class='btn' onclick="hideHelp()">已经知道，如需再次查看，请点击右下角</button>
+</div>
     <div id="topBox">
 
     <h1 id="tlc"><b>时间轴可视化系统</b></h1>
+
         <div id="timeline">
+
             <p style="text-align:center; margin-top:10%; font-size:1.5em">
             
             </p>
@@ -206,7 +223,6 @@
     </div>
 
     
-    
 
 
 <div id="inputOverlay">Or choose from an example file
@@ -275,11 +291,18 @@
         </div-->
     </div>
 </div>
-<div id="guide"><a target="_blank" href="try.html">Show Results</a></div>
+
+<div id="guide"><a onclick="showHelp()">Show Help!</a></div>
 
 </body>
 
 <script type="text/javascript">
+    function showHelp(){
+        $('#helpBox').fadeIn(500)
+    }
+    function hideHelp(){
+        $('#helpBox').fadeOut(500)
+    }
 
     var app = angular.module('tlApp', []);
 
@@ -336,6 +359,7 @@
         ];
 
         $scope.isAddDate=false
+
 
         $scope.saveState=function() {
             var xhr = new XMLHttpRequest();
@@ -548,6 +572,9 @@
                      })
                     .on("mouseover", function(d) { showlabel(d) })
                     .on("mouseout", function(d) { $("#eventlabel").css("display","none") })
+
+       // var tip=' Steps:\n1.拷贝你的新闻内容至Document View内，并提交 \n2.点击Control Panel中的加号按钮，提供一个初始为空的事件供你写入\n3.根据Document View内的新闻，逐一向Control Panel的空事件写入事件，并提交\n4.点击Control Panel中的向下按钮，下次此次你写入的所有事件文件，以备下次使用\n5.若需重新加载新的新闻，点击Control Panel中的文本按钮    \n6.若需载入已经下载的事件文件，点击Control Panel中的向上按钮'
+       //  alert(tip);
 
          $scope.paste=function(){
             if($('#pasteBox')[0].value){

@@ -20,7 +20,7 @@
 
     <script type="text/javascript" src="/newsVis/Application/Home/Common/js/lib/jszip.min.js"></script>
 
-    <title>时间轴可视化系统</title>
+    <title>新闻事件标注系统</title>
 
 </head>
 
@@ -43,7 +43,7 @@
 </div>
     <div id="topBox">
 
-    <h1 id="tlc"><b>时间轴可视化系统</b></h1>
+    <h1 id="tlc"><b>新闻事件标注系统</b></h1>
 
         <div id="timeline">
 
@@ -136,7 +136,7 @@
 
             <!-- Save current state -->
 
-            <div id="pasteShow" class="ctlBtns toolBoxBtn" title="Paste from clipboard" ng-click="pasteShow()"></div>
+            <div id="pasteShow" class="ctlBtns toolBoxBtn" title="Paste from clipboard" ng-click="prePasteShow()"></div>
 
             <div id="saveState" class="ctlBtns toolBoxBtn" title="Save this state of current events" ng-click='saveData()'></div>
             
@@ -393,62 +393,95 @@
 
 
         $scope.sendPath=function(path){
-            if(confirm("是否清空列表中的事件")){
-                $scope.pasteShow();
-                $scope.timexes=[]
-                var readPath=path.value;
-                readPath=readPath.slice(readPath.lastIndexOf('\\')+1);
-                var xhr = new XMLHttpRequest();
-                 
-                xhr.open("POST", "Home/Index/readPath", true);
-                xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-                xhr.onreadystatechange = function(){
-                    var XMLHttpReq = xhr;
-                    if (XMLHttpReq.readyState == 4) {
-                        if (XMLHttpReq.status == 200) {
-                            var text = XMLHttpReq.responseText;
-                            $scope.timexes=JSON.parse(eval(text));
-                            console.log($scope.timexes)
-                            // console.log(JSON.parse(text))
-                            $scope.updateList();
-                            $scope.updateD3('newDoc',$scope.timexes);
+            if($scope.timexes.length!=0){
+                if(confirm("是否清空列表中的事件")){
+                    $scope.pasteShow();
+                    $scope.timexes=[]
+                    var readPath=path.value;
+                    readPath=readPath.slice(readPath.lastIndexOf('\\')+1);
+                    var xhr = new XMLHttpRequest();
+                     
+                    xhr.open("POST", "Home/Index/readPath", true);
+                    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function(){
+                        var XMLHttpReq = xhr;
+                        if (XMLHttpReq.readyState == 4) {
+                            if (XMLHttpReq.status == 200) {
+                                var text = XMLHttpReq.responseText;
+                                $scope.timexes=JSON.parse(eval(text));
+                                console.log($scope.timexes)
+                                // console.log(JSON.parse(text))
+                                $scope.updateList();
+                                $scope.updateD3('newDoc',$scope.timexes);
+                            }
                         }
-                    }
-                };
-                // console.log($scope.timexes)
-                xhr.send('data='+readPath);
-                $('#leftBox').innerHTML= $('#leftBox').innerHTML
+                    };
+                    // console.log($scope.timexes)
+                    xhr.send('data='+readPath);
+                    $('#leftBox').innerHTML= $('#leftBox').innerHTML
+                }else{
+                    $scope.pasteShow();
+                    var readPath=path.value;
+                    readPath=readPath.slice(readPath.lastIndexOf('\\')+1);
+                    var xhr = new XMLHttpRequest();
+                     
+                    xhr.open("POST", "Home/Index/readPath", true);
+                    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function(){
+                        var XMLHttpReq = xhr;
+                        if (XMLHttpReq.readyState == 4) {
+                            if (XMLHttpReq.status == 200) {
+                                var text = XMLHttpReq.responseText;
+                                var events=JSON.parse(eval(text));
+                                var len=$scope.timexes.length;
+                                events.forEach(function(d){
+                                    d['id']+=len
+                                    $scope.timexes.push(d);
+                                })
+                                console.log(events)
+                                console.log($scope.timexes)
+                                // console.log(JSON.parse(text))
+                                $scope.updateList();
+                                $scope.updateD3('newDoc',$scope.timexes);
+                            }
+                        }
+                    };
+                    // console.log($scope.timexes)
+                    xhr.send('data='+readPath);
+                    $('#leftBox').innerHTML= $('#leftBox').innerHTML
+                }
             }else{
                 $scope.pasteShow();
-                var readPath=path.value;
-                readPath=readPath.slice(readPath.lastIndexOf('\\')+1);
-                var xhr = new XMLHttpRequest();
-                 
-                xhr.open("POST", "Home/Index/readPath", true);
-                xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-                xhr.onreadystatechange = function(){
-                    var XMLHttpReq = xhr;
-                    if (XMLHttpReq.readyState == 4) {
-                        if (XMLHttpReq.status == 200) {
-                            var text = XMLHttpReq.responseText;
-                            var events=JSON.parse(eval(text));
-                            var len=$scope.timexes.length;
-                            events.forEach(function(d){
-                                d['id']+=len
-                                $scope.timexes.push(d);
-                            })
-                            console.log(events)
-                            console.log($scope.timexes)
-                            // console.log(JSON.parse(text))
-                            $scope.updateList();
-                            $scope.updateD3('newDoc',$scope.timexes);
+                    var readPath=path.value;
+                    readPath=readPath.slice(readPath.lastIndexOf('\\')+1);
+                    var xhr = new XMLHttpRequest();
+                     
+                    xhr.open("POST", "Home/Index/readPath", true);
+                    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function(){
+                        var XMLHttpReq = xhr;
+                        if (XMLHttpReq.readyState == 4) {
+                            if (XMLHttpReq.status == 200) {
+                                var text = XMLHttpReq.responseText;
+                                var events=JSON.parse(eval(text));
+                                var len=$scope.timexes.length;
+                                events.forEach(function(d){
+                                    d['id']+=len
+                                    $scope.timexes.push(d);
+                                })
+                                console.log(events)
+                                console.log($scope.timexes)
+                                // console.log(JSON.parse(text))
+                                $scope.updateList();
+                                $scope.updateD3('newDoc',$scope.timexes);
+                            }
                         }
-                    }
-                };
-                // console.log($scope.timexes)
-                xhr.send('data='+readPath);
-                $('#leftBox').innerHTML= $('#leftBox').innerHTML
+                    };
+                    // console.log($scope.timexes)
+                    xhr.send('data='+readPath);
+                    $('#leftBox').innerHTML= $('#leftBox').innerHTML
             }
+            
             
         }
         //var for left box
@@ -614,6 +647,21 @@
                 $scope.pasteBoxShow=!$scope.pasteBoxShow
             }
             
+         }
+
+         $scope.prePasteShow=function() {
+             if($scope.timexes.length!=0){
+                if(confirm("是否保存列表中的事件并清空")){
+                   $scope.saveState()
+                }else{
+                   $scope.pasteShow();
+                }
+            }else{
+                $scope.pasteShow();
+            }
+             $scope.timexes=[];
+             $scope.updateD3("newDoc",$scope.timexes);
+             $('.display')[0].innerHTML='';
          }
 
          $scope.pasteShow=function(){

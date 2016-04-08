@@ -20,7 +20,7 @@
 
     <script type="text/javascript" src="/newsVis/Application/Home/Common/js/lib/jszip.min.js"></script>
 
-    <title>时间轴可视化系统</title>
+    <title>新闻事件标注系统</title>
 
 </head>
 
@@ -43,7 +43,7 @@
 </div>
     <div id="topBox">
 
-    <h1 id="tlc"><b>时间轴可视化系统</b></h1>
+    <h1 id="tlc"><b>新闻事件标注系统</b></h1>
 
         <div id="timeline">
 
@@ -87,7 +87,7 @@
 
             <div id="listData">
                 <table>
-                    <tr id="Listid_{{tx.id}}" ng-repeat="tx in timexes | orderBy: orderByVal:orderReverse" class="listEl" ng-click="clickList(tx)" ng-class="{deleted: tx.deleted}">
+                    <tr id="Listid_{{tx.id}}" ng-repeat="tx in timexes track by tx.id| orderBy: orderByVal:orderReverse" class="listEl" ng-click="clickList(tx)" ng-class="{deleted: tx.deleted}">
                         <td>
                             <span class="bgColor_2 symbol_{{tx.typ}}">
                             <!-- <p ng-if="tx.touched"> &#10002; </p> -->
@@ -136,7 +136,7 @@
 
             <!-- Save current state -->
 
-            <div id="pasteShow" class="ctlBtns toolBoxBtn" title="Paste from clipboard" ng-click="pasteShow()"></div>
+            <div id="pasteShow" class="ctlBtns toolBoxBtn" title="Paste from clipboard" ng-click="prePasteShow()"></div>
 
             <div id="saveState" class="ctlBtns toolBoxBtn" title="Save this state of current events" ng-click='saveData()'></div>
             
@@ -393,31 +393,96 @@
 
 
         $scope.sendPath=function(path){
-            $scope.pasteShow();
-            $scope.timexes=[]
-            var readPath=path.value;
-            readPath=readPath.slice(readPath.lastIndexOf('\\')+1);
-            var xhr = new XMLHttpRequest();
-             
-            xhr.open("POST", "Home/Index/readPath", true);
-            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function(){
-                var XMLHttpReq = xhr;
-                if (XMLHttpReq.readyState == 4) {
-                    if (XMLHttpReq.status == 200) {
-                        var text = XMLHttpReq.responseText;
-                        $scope.timexes=JSON.parse(eval(text));
-                        console.log($scope.timexes)
-                        // console.log(JSON.parse(text))
-                        $scope.updateList();
-                        $scope.updateD3('newDoc',$scope.timexes);
-                    }
+            if($scope.timexes.length!=0){
+                if(confirm("是否清空列表中的事件")){
+                    $scope.pasteShow();
+                    $scope.timexes=[]
+                    var readPath=path.value;
+                    readPath=readPath.slice(readPath.lastIndexOf('\\')+1);
+                    var xhr = new XMLHttpRequest();
+                     
+                    xhr.open("POST", "Home/Index/readPath", true);
+                    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function(){
+                        var XMLHttpReq = xhr;
+                        if (XMLHttpReq.readyState == 4) {
+                            if (XMLHttpReq.status == 200) {
+                                var text = XMLHttpReq.responseText;
+                                $scope.timexes=JSON.parse(eval(text));
+                                console.log($scope.timexes)
+                                // console.log(JSON.parse(text))
+                                $scope.updateList();
+                                $scope.updateD3('newDoc',$scope.timexes);
+                            }
+                        }
+                    };
+                    // console.log($scope.timexes)
+                    xhr.send('data='+readPath);
+                    $('#leftBox').innerHTML= $('#leftBox').innerHTML
+                }else{
+                    $scope.pasteShow();
+                    var readPath=path.value;
+                    readPath=readPath.slice(readPath.lastIndexOf('\\')+1);
+                    var xhr = new XMLHttpRequest();
+                     
+                    xhr.open("POST", "Home/Index/readPath", true);
+                    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function(){
+                        var XMLHttpReq = xhr;
+                        if (XMLHttpReq.readyState == 4) {
+                            if (XMLHttpReq.status == 200) {
+                                var text = XMLHttpReq.responseText;
+                                var events=JSON.parse(eval(text));
+                                var len=$scope.timexes.length;
+                                events.forEach(function(d){
+                                    d['id']+=len
+                                    $scope.timexes.push(d);
+                                })
+                                console.log(events)
+                                console.log($scope.timexes)
+                                // console.log(JSON.parse(text))
+                                $scope.updateList();
+                                $scope.updateD3('newDoc',$scope.timexes);
+                            }
+                        }
+                    };
+                    // console.log($scope.timexes)
+                    xhr.send('data='+readPath);
+                    $('#leftBox').innerHTML= $('#leftBox').innerHTML
                 }
-            };
-
-            // console.log($scope.timexes)
-            xhr.send('data='+readPath);
-            $('#leftBox').innerHTML= $('#leftBox').innerHTML
+            }else{
+                $scope.pasteShow();
+                    var readPath=path.value;
+                    readPath=readPath.slice(readPath.lastIndexOf('\\')+1);
+                    var xhr = new XMLHttpRequest();
+                     
+                    xhr.open("POST", "Home/Index/readPath", true);
+                    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function(){
+                        var XMLHttpReq = xhr;
+                        if (XMLHttpReq.readyState == 4) {
+                            if (XMLHttpReq.status == 200) {
+                                var text = XMLHttpReq.responseText;
+                                var events=JSON.parse(eval(text));
+                                var len=$scope.timexes.length;
+                                events.forEach(function(d){
+                                    d['id']+=len
+                                    $scope.timexes.push(d);
+                                })
+                                console.log(events)
+                                console.log($scope.timexes)
+                                // console.log(JSON.parse(text))
+                                $scope.updateList();
+                                $scope.updateD3('newDoc',$scope.timexes);
+                            }
+                        }
+                    };
+                    // console.log($scope.timexes)
+                    xhr.send('data='+readPath);
+                    $('#leftBox').innerHTML= $('#leftBox').innerHTML
+            }
+            
+            
         }
         //var for left box
         $scope.sortBy = [
@@ -584,6 +649,21 @@
             
          }
 
+         $scope.prePasteShow=function() {
+             if($scope.timexes.length!=0){
+                if(confirm("是否保存列表中的事件并清空")){
+                   $scope.saveState()
+                }else{
+                   $scope.pasteShow();
+                }
+            }else{
+                $scope.pasteShow();
+            }
+             $scope.timexes=[];
+             $scope.updateD3("newDoc",$scope.timexes);
+             $('.display')[0].innerHTML='';
+         }
+
          $scope.pasteShow=function(){
             $('#docText')[0].innerHTML='<textarea id="pasteBox" autofocus style="width:100%;height:400px" placeholder="You can paste your news here!"></textarea>'
             $scope.pasteBoxShow=true
@@ -600,13 +680,15 @@
         }
 
         $scope.submitDate=function(){
+            // console.log($('#sDate'))
             if($scope.currentid<$scope.timexes.length){
                 $scope.timexes[$scope.currentid].times=$('#sDate')[0].value;
                 $scope.timexes[$scope.currentid].content=$('#sTitle')[0].value;
                 $scope.timexes[$scope.currentid].sent=$('#sContent')[0].value;
             }else{
                 if($('#sDate')[0].value&&$('#sTitle')[0].value&&$('#sContent')[0].value){
-                    var thisEvent={ times:$('#sDate')[0].value,content:$('#sTitle')[0].value,id:$scope.timexes.length,typ:'date',touched:true,deleted:false,textId:0,sentId:1,sent:$('#sContent')[0].value,area:'36.0992900000,118.5276630000'};
+                    // console.log($('#docText')[0].innerHTML)
+                    var thisEvent={ times:$('#sDate')[0].value,content:$('#sTitle')[0].value,id:$scope.timexes.length,typ:'date',touched:true,deleted:false,textId:0,sentId:1,sent:$('#sContent')[0].value,area:'36.0992900000,118.5276630000',news:$('#docText')[0].innerHTML};
                     $scope.timexes.push(thisEvent)
                 }
             }
@@ -853,7 +935,7 @@
                 $(thisid).addClass('highlighted');  
                 $(drawid).attr("class",$(drawid).attr("class")+" selected")
             }
-            $scope.rollList(id);
+            // $scope.rollList(id);
             //Sent中的高亮
             // $scope.highlightSent(sentnr);
             //句子跳转
@@ -869,7 +951,9 @@
         // ]
         $scope.showSelectedEvent=function(id){
             var selectedEvent=$scope.timexes[id]
+            console.log(selectedEvent)
             $('.display')[0].innerHTML='<span class="label">Time:</span><br><br><input id="sDate" type="date" value='+selectedEvent['times'].substring(0,10)+'><br><br><span class="label">Title:</span><br><br><textarea id="sTitle" class="bigTextarea">'+selectedEvent['content']+'</textarea><br><br><span class="label">Content:</span><br><br><textarea class="bigTextarea" id="sContent">'+selectedEvent['sent']+'</textarea>'
+            $('#docText')[0].innerHTML=selectedEvent['news']
         }
         //function for centre box
         $scope.switchView= function(v){ 
@@ -917,11 +1001,11 @@
                 $("#centerBox").animate({ scrollTop: topTextPos }, 300);
         }
 
-        $scope.rollList = function(eventid){
-            var thisList = "#Listid_"+eventid;
-            var topTextPos = $("#listData").scrollTop() + $(thisList).position().top- $("#listData").height()/2 + $(thisList).height()/2;
-                $("#listData").animate({ scrollTop: topTextPos },100);
-        }
+        // $scope.rollList = function(eventid){
+        //     var thisList = "#Listid_"+eventid;
+        //     var topTextPos = $("#listData").scrollTop() + $(thisList).position().top- $("#listData").height()/2 + $(thisList).height()/2;
+        //         $("#listData").animate({ scrollTop: topTextPos },100);
+        // }
 
         $scope.gohome = function(){
             $scope.dateSelected = false;
